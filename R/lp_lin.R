@@ -353,7 +353,7 @@ lp_lin <- function(endog_data,
      yy  <-   y_lin[h:dim(y_lin)[1], ]
      xx  <-   x_lin[1:(dim(x_lin)[1] - h + 1), ]
 
-     # Set lag number for Newey-West (1987)
+     # Set # lag number for Newey-West (1987)
      if(is.null(nw_lag)){
 
           lag_nw <- h
